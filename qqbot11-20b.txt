@@ -1,0 +1,11 @@
+docker pull bulletplus/qqbot
+docker run --name qqbot1 -v /root/qqbot1/app:/app -p 5010:5010 bulletplus/qqbot -restart:always
+
+git clone https://ghproxy.com/https://github.com/Bulletgod/qqbot-1120.git /root/qqbot1
+docker restart qqbot1
+
+
+
+https://raw.githubusercontent.com/Bulletgod/qqbot-1120/main/qqbot-11-20b.sh
+
+bash <(curl -L -s https://ghproxy.com/https://raw.githubusercontent.com/Bulletgod/qqbot-1120/main/qqbot-11-20b.sh)
